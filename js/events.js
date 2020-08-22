@@ -7,7 +7,7 @@ function frameIt() {
 }
 
 function pressIt() {
-  if ($( "input").val() === "71") {
+  if (key.which == "71") {
     alert('G was pressed');
   }
 }
