@@ -1,3 +1,5 @@
+var key1
+
 function getIt(){
   alert("Hey!")
 }//define functions here
@@ -7,7 +9,7 @@ function frameIt() {
 }
 
 function pressIt() {
-  if (key.which == "71") {
+  if (key1.which == "71") {
     alert('G was pressed');
   }
 }
@@ -15,5 +17,8 @@ function pressIt() {
 $(document).ready(function() {
   $('p').on('click',getIt());
   $('img').on('load',frameIt());
-  $('form').on('keydown',pressIt());
+  $('input').on('keydown',function(key){
+    key1 = key
+    pressIt()
+  });
 });
