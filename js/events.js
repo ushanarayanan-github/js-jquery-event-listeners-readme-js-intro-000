@@ -6,7 +6,7 @@ function frameIt() {
   $('img').addClass("tasty")
 }
 
-function pressIt() {
+function pressIt(key) {
   if (key.which == "71") {
     alert('G was pressed');
   }
@@ -16,6 +16,6 @@ $(document).ready(function() {
   $('p').on('click',getIt());
   $('img').on('load',frameIt());
   $('input').on('keydown',function(key){
-    pressIt()
+    pressIt(key)
   });
 });
