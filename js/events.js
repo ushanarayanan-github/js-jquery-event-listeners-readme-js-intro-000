@@ -1,4 +1,4 @@
-var key1
+let key1
 
 function getIt(){
   alert("Hey!")
