@@ -7,8 +7,8 @@ function frameIt() {
 }
 
 function pressIt() {
-  if ($( "input" ).val() === "71") {
-    alert('d now');
+  if ($( "input").val() === "71") {
+    alert('G was pressed');
   }
 }
 
