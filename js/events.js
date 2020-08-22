@@ -3,7 +3,5 @@ function getIt(){
 }//define functions here
 
 $(document).ready(function(){
-
-$('p').on('click',getIt())
-
+  $('p').on('click',getIt())
 });
